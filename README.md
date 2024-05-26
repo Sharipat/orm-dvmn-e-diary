@@ -1,27 +1,27 @@
-# Скрипт для электронного дневника
+# Script for Electronic Diary
 
-Этот скрипт создан для исправления оценок, удаления замечаний и добавления похвалы в электронный дневник школы.
-## Запуск
+This script is created to correct grades, remove remarks, and add commendations to the school's electronic diary.
+## Running
 
-- Скачайте архив сайта с [Github](https://github.com/dvmn-tasks/e-diary), скопируйте в корень папки файл БД и разверните сайт
-- Положите файл `script.py` рядом с `manage.py` в корне сайта
-- Запустите оболочку Shell `python manage.py shell`
-- Установите скрипт в терминале командой `import script`
-- Запустите скрипт командой `script.main()`
-- После фразы в терминале `Введите фамилию и имя` ведите полное имя ученика 
-- В пустом поле после `Введите название предмета` добавьте название урока для добавления похвалы
+- Download the website archive from [Github](https://github.com/dvmn-tasks/e-diary), copy the database file to the root folder, and deploy the website.
+- Put the `script.py` file next to `manage.py` in the root of the website.
+- Run the Shell console `python manage.py shell`.
+- Install the script in the terminal with the command `import script`.
+- Run the script with the command `script.main()`.
+- After the prompt `Введите фамилию и имя`, enter the full name of the student.
+- In the empty field after `Введите название предмета`, add the lesson name for adding a commendation.
 
-## Дополнительные возможности использования
+## Additional Usage Options
 
-Для запуска определенных задач, после установки скрипта в окно терминала вводим следущие команды:
+To run specific tasks, after installing the script, enter the following commands in the terminal window:
 
-`fix_marks('Фамилия Имя')` - функция для исправления оценок на пятерки, где вместо Фамилия и Имя необходимо подставить реальные данные ученика (без ошибок). В случае ошибки терминал покажет `"Имя ученика введено с ошибкой"`, означающую, что нужно использовать команду снова.
+`fix_marks('Фамилия Имя')` - a function to fix grades to fives, where you need to substitute the real student's data (without errors) instead of Last Name and First Name. In case of an error, the terminal will show `"Имя ученика введено с ошибкой"`, which means you need to use the command again.
 
-`remove_chastisements('Фамилия Имя')` - функция для удаления замечаний от учителя, Фамилия и Имя подставляются аналогично функции выше.
+`remove_chastisements('Фамилия Имя')` - a function to remove remarks from the teacher, where Last Name and First Name are substituted similarly to the function above.
 
-`create_commendation('Фамилия Имя', 'Предмет')` - функция для добавления похвалы от учителя. Здесь вводим сначала Фамилию и Имя в кавычках, а через запятую, также в кавычках, название желаемого предмета, на уроке которого будет проставлена похвала выбранному ученику. В случае ошибки в названии предмета выведется `"Попробуйте ввести другой предмет"`
+`create_commendation('Фамилия Имя', 'Предмет')` - a function to add a commendation from the teacher. Here, enter the Last Name and First Name in quotes first, and then, separated by a comma, in quotes as well, enter the name of the desired subject on which the commendation will be given to the selected student. In case of an error in the subject name, `"Ошибка: введено несколько учеников"` will be displayed.
 
-## Примеры использования
+## Usage Examples
 
 ```python manage.py shell
 
@@ -36,8 +36,3 @@
 >Музыка
 >>>
 ```
-
-
-## Цели проекта
-
-Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).

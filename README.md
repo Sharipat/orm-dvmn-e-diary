@@ -1,6 +1,6 @@
-# Script for Electronic Diary
+# Script for Electronic School Journal
 
-This script is created to correct grades, remove remarks, and add commendations to the school's electronic diary.
+This script is created to correct grades, remove remarks, and add commendations to the school's electronic school journal.
 ## Running
 
 - Download the website archive from [Github](https://github.com/dvmn-tasks/e-diary), copy the database file to the root folder, and deploy the website.
